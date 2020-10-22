@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>Mathematica退出窗口不完整的解决方法</title>
+      <link href="2020/10/22/mathematica-tui-chu-chuang-kou-bu-wan-zheng-jie-jue-fang-fa/"/>
+      <url>2020/10/22/mathematica-tui-chu-chuang-kou-bu-wan-zheng-jie-jue-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<p>在退出 Mathematica 时，有可能出现退出窗口不完整的情况，而我在 Win10 电脑上安装过几次 Mathematica 11 或 12 ，则是每次都出现该问题，如图所示：<br><img src="https://i.postimg.cc/3JpZxmqP/Pic-Pick-201908111565510887.png" alt="不完整的退出窗口"><br>该问题的解决方法为：以管理员身份启动 Mathematica，然后在新建的笔记本中运行下面的代码即可：</p><pre class="line-numbers language-Mathematica" data-language="Mathematica"><code class="language-Mathematica">(*&#x3D;&#x3D;需要以管理员身份运行&#x3D;&#x3D;*)(*退出对话框路径*)path &#x3D; $InstallationDirectory &lt;&gt;   &quot;&#x2F;SystemFiles&#x2F;FrontEnd&#x2F;TextResources&#x2F;MathematicaClosingDialog.nb&quot;;(*备份*)If[! FileExistsQ[path &lt;&gt; &quot;.bk&quot;], CopyFile[path, path &lt;&gt; &quot;.bk&quot;]];(*导入*)nb &#x3D; NotebookPut[Import[path]];(*修改窗口尺寸*)SetOptions[  nb, &#123;WindowSize -&gt; &#123;600, All&#125;, WindowElements -&gt; &#123;&quot;MenuBar&quot;&#125;&#125;];(*保存*)Export[path, nb];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>结果如图所示：<br><img src="https://i.postimg.cc/fbHcrK30/Pic-Pick-201908111565514613.png" alt="完整的退出窗口"><br>该方法来源为<a href="https://lixuan.xyz/notes/mathematica/03-topic/01-setup-notebook/01-setup-notebook.html">《设置笔记本· Mathematica 学习笔记》</a>。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mathematica </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="2020/09/12/hello-world/"/>
       <url>2020/09/12/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new &quot;My New Post&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
       

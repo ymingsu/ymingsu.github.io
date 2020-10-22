@@ -24,21 +24,24 @@
     var CONFIG = {"hostname":"yms.ac.cn","root":"/","scheme":"Gemini","version":"8.0.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 
-  <meta name="description" content="UCAS SIA State Key Laboratory of Robotics">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://yms.ac.cn/about/index.html">
+  <meta name="description" content="在退出 Mathematica 时，有可能出现退出窗口不完整的情况，而我在 Win10 电脑上安装过几次 Mathematica 11 或 12 ，则是每次都出现该问题，如图所示：该问题的解决方法为：以管理员身份启动 Mathematica，然后在新建的笔记本中运行下面的代码即可： (*&#x3D;&#x3D;需要以管理员身份运行&#x3D;&#x3D;*) (*退出对话框路径*) path &amp;#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mathematica退出窗口不完整的解决方法">
+<meta property="og:url" content="https://yms.ac.cn/2020/10/22/mathematica-tui-chu-chuang-kou-bu-wan-zheng-jie-jue-fang-fa/index.html">
 <meta property="og:site_name" content="Su&#39;s Blog">
-<meta property="og:description" content="UCAS SIA State Key Laboratory of Robotics">
+<meta property="og:description" content="在退出 Mathematica 时，有可能出现退出窗口不完整的情况，而我在 Win10 电脑上安装过几次 Mathematica 11 或 12 ，则是每次都出现该问题，如图所示：该问题的解决方法为：以管理员身份启动 Mathematica，然后在新建的笔记本中运行下面的代码即可： (*&#x3D;&#x3D;需要以管理员身份运行&#x3D;&#x3D;*) (*退出对话框路径*) path &amp;#">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-09-13T10:47:39.000Z">
-<meta property="article:modified_time" content="2020-10-22T03:59:40.607Z">
+<meta property="og:image" content="https://i.postimg.cc/3JpZxmqP/Pic-Pick-201908111565510887.png">
+<meta property="og:image" content="https://i.postimg.cc/fbHcrK30/Pic-Pick-201908111565514613.png">
+<meta property="article:published_time" content="2020-10-22T13:43:47.000Z">
+<meta property="article:modified_time" content="2020-10-22T14:11:43.442Z">
 <meta property="article:author" content="Yming Su">
-<meta property="article:tag" content="Robot vision Video&#x2F;Image analysis Image Processing">
+<meta property="article:tag" content="Mathematica">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.postimg.cc/3JpZxmqP/Pic-Pick-201908111565510887.png">
 
 
-<link rel="canonical" href="https://yms.ac.cn/about/">
+<link rel="canonical" href="https://yms.ac.cn/2020/10/22/mathematica-tui-chu-chuang-kou-bu-wan-zheng-jie-jue-fang-fa/">
 
 
 <script class="page-configurations">
@@ -46,13 +49,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>about | Su's Blog
-</title>
+  <title>Mathematica退出窗口不完整的解决方法 | Su's Blog</title>
   
 
 
@@ -263,44 +265,135 @@
 </noscript>
 
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner post posts-expand">
       
-  
-  
 
       
 
-    
-    
-    
-    <div class="post-block" lang="zh-CN">
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://yms.ac.cn/2020/10/22/mathematica-tui-chu-chuang-kou-bu-wan-zheng-jie-jue-fang-fa/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Yming Su">
+      <meta itemprop="description" content="UCAS SIA State Key Laboratory of Robotics">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Su's Blog">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Mathematica退出窗口不完整的解决方法
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">about
-</h1>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
 
-<div class="post-meta-container">
+      <time title="创建时间：2020-10-22 21:43:47 / 修改时间：22:11:43" itemprop="dateCreated datePublished" datetime="2020-10-22T21:43:47+08:00">2020-10-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+        </span>
+    </span>
+
   
-
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
 </div>
 
-</header>
+        </div>
+      </header>
 
-      
-      
-      
-      <div class="post-body">
-          
-      </div>
-      
-      
-      
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>在退出 Mathematica 时，有可能出现退出窗口不完整的情况，而我在 Win10 电脑上安装过几次 Mathematica 11 或 12 ，则是每次都出现该问题，如图所示：<br><img src="https://i.postimg.cc/3JpZxmqP/Pic-Pick-201908111565510887.png" alt="不完整的退出窗口"><br>该问题的解决方法为：以管理员身份启动 Mathematica，然后在新建的笔记本中运行下面的代码即可：</p>
+<pre class="line-numbers language-Mathematica" data-language="Mathematica"><code class="language-Mathematica">(*&#x3D;&#x3D;需要以管理员身份运行&#x3D;&#x3D;*)
+(*退出对话框路径*)
+path &#x3D; $InstallationDirectory &lt;&gt;
+   &quot;&#x2F;SystemFiles&#x2F;FrontEnd&#x2F;TextResources&#x2F;MathematicaClosingDialog.nb&quot;;
+(*备份*)
+If[! FileExistsQ[path &lt;&gt; &quot;.bk&quot;], CopyFile[path, path &lt;&gt; &quot;.bk&quot;]];
+(*导入*)
+nb &#x3D; NotebookPut[Import[path]];
+(*修改窗口尺寸*)
+SetOptions[
+  nb, &#123;WindowSize -&gt; &#123;600, All&#125;, WindowElements -&gt; &#123;&quot;MenuBar&quot;&#125;&#125;];
+(*保存*)
+Export[path, nb];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>结果如图所示：<br><img src="https://i.postimg.cc/fbHcrK30/Pic-Pick-201908111565514613.png" alt="完整的退出窗口"><br>该方法来源为<a target="_blank" rel="noopener" href="https://lixuan.xyz/notes/mathematica/03-topic/01-setup-notebook/01-setup-notebook.html">《设置笔记本· Mathematica 学习笔记》</a>。</p>
+
     </div>
-    
 
     
     
     
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Yming Su
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://yms.ac.cn/2020/10/22/mathematica-tui-chu-chuang-kou-bu-wan-zheng-jie-jue-fang-fa/" title="Mathematica退出窗口不完整的解决方法">https://yms.ac.cn/2020/10/22/mathematica-tui-chu-chuang-kou-bu-wan-zheng-jie-jue-fang-fa/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Mathematica/" rel="tag"># Mathematica</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/09/12/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
 
 
       
@@ -412,57 +505,13 @@
   
 
   
-      <script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              const target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    const script = document.createElement('script');
-    script.src = '//cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
-    script.defer = true;
-    document.head.appendChild(script);
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.typesetClear();
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
 
   
 
 <script>
 NexT.utils.loadComments('#lv-container', () => {
   window.livereOptions = {
-    refer: "about/"
+    refer: "2020/10/22/mathematica-tui-chu-chuang-kou-bu-wan-zheng-jie-jue-fang-fa/"
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
