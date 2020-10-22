@@ -2,21 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yms.ac.cn/2020/09/12/hello-world/</loc>
-    
-    <lastmod>2020-10-22</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yms.ac.cn/2020/10/22/mathematica-tui-chu-chuang-kou-bu-wan-zheng-jie-jue-fang-fa/</loc>
-    
-    <lastmod>2020-10-22</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yms.ac.cn/404.html</loc>
+    <loc>https://yms.ac.cn/tags/index.html</loc>
     
     <lastmod>2020-10-22</lastmod>
     
@@ -30,7 +16,7 @@
   </url>
   
   <url>
-    <loc>https://yms.ac.cn/tags/index.html</loc>
+    <loc>https://yms.ac.cn/categories/index.html</loc>
     
     <lastmod>2020-10-22</lastmod>
     
@@ -44,7 +30,21 @@
   </url>
   
   <url>
-    <loc>https://yms.ac.cn/categories/index.html</loc>
+    <loc>https://yms.ac.cn/404.html</loc>
+    
+    <lastmod>2020-10-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yms.ac.cn/2020/09/12/hello-world/</loc>
+    
+    <lastmod>2020-10-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yms.ac.cn/2020/10/22/mathematica-tui-chu-chuang-kou-bu-wan-zheng-jie-jue-fang-fa/</loc>
     
     <lastmod>2020-10-22</lastmod>
     
